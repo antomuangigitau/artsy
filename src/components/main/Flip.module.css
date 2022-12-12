@@ -1,0 +1,20 @@
+.flip {
+  text-align: center;
+}
+.flip h3 {
+  margin: 0 186px;
+  width: 1028px;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 125px;
+  font-family: 'Clash Display', sans-serif;
+  color: var(--Dark);
+}
+.flip p {
+  margin: 50px 257px;
+  width: 926px;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 44px;
+}
