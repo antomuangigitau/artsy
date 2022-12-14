@@ -25,6 +25,11 @@ import logo1 from './assets/images/Rectangle 231.png';
 import logo2 from './assets/images/Rectangle 232.png';
 import logo3 from './assets/images/Rectangle 233.png';
 import logo4 from './assets/images/Rectangle 234.png';
+import auction1 from './assets/images/Rectangle 247.png';
+import auction2 from './assets/images/Rectangle 245.png';
+import auction3 from './assets/images/Rectangle 246.png';
+import auction4 from './assets/images/Rectangle 57.png';
+import auction5 from './assets/images/Rectangle 58.png';
 
 export const images = [
   {
@@ -48,6 +53,33 @@ export const images = [
     img: logo4,
   },
 ];
+
+export const auctionimgs = [
+  {
+    id: 1,
+    img: auction1,
+  },
+  {
+    id:2,
+    img: auction2,
+  },
+  {
+    id:3,
+    img: auction3
+  },
+]
+
+export const topauctions = [
+  {
+    id:1,
+    img: auction4,
+  },
+  {
+    id:2,
+    img: auction5,
+  },
+]
+
 
 import img5 from './assets/images/Rectangle 299.png';
 import img6 from './assets/images/Rectangle 300.png';
