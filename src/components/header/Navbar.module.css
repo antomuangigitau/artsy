@@ -18,6 +18,9 @@
 .link {
   color: var(--Dark);
   position: relative;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
 }
 .link::before {
   content: '';
