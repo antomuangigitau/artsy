@@ -1,5 +1,5 @@
-import { images } from '../../data';
 import styles from './Flip.module.css';
+import { images } from '../../data';
 
 const Flip = () => {
   return (
@@ -15,7 +15,7 @@ const Flip = () => {
       <div className={styles['images']}>
         {images.map((image) => {
           const { id, img } = image;
-          return <img key={id} src={img} alt={`Image ${id}`} />;
+          return <img key={id} src={img} alt={`image ${id}`} />;
         })}
       </div>
     </section>
