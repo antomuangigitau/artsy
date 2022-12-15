@@ -4,7 +4,7 @@ import { topauctions } from "../../data";
 
 const Swap = () => {
     return (
-        <div className={styles['swap']}>
+        <div className={styles.swap}>
             <h4>Home/ Auctions</h4><br/>
             <p>Here's an overview of products actively on auction, explore!</p><br/><br/>
             <div className={styles['images']}>
@@ -13,8 +13,8 @@ const Swap = () => {
                     return <img src={img} key={id}/>;
                 })}
             </div>
-            <div className={styles["top__bids"]}>
-                <h3>Top bids from popular </h3>
+            <div className={styles.top__bids}>
+                <h3>Top bids from popular creators</h3>
                 <div className={styles["row"]}>
                     <div className={styles["column"]}>
                         <div className={styles['card']}>
