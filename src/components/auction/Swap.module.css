@@ -1,7 +1,8 @@
 
 .swap {
-  margin: 0 20px 0 120px;
+  margin: 0 0 0 120px;
   /* background-color: black; */
+  margin-bottom: 50px;
 }
 
 .swap h4 {
@@ -18,10 +19,11 @@
 }
 
 .images {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  overflow: hidden;
   gap: 43px;
-  min-width: 485px;
+  min-width: 100%;
   max-height: 356px;
   margin-bottom: 60px;
 }
@@ -35,6 +37,7 @@
 
 .row {
   margin-top: 46px;
+  margin-bottom: 500px;
 }
 
 .column {
@@ -43,15 +46,20 @@
   display: flex;
   flex-direction: row;
   gap: 110px;
+  flex-wrap: wrap;
+
 }
 
-.left, .right {
-  /* border: 0.5px solid black; */
-  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.25);;
-  border-radius: 8px;
-  background: #FFF;
+.card {
+  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  float: right;
+  flex: 0 1 24%;
+  min-width: 545px;
 }
 
-.extrainfo {
-  padding-top: 20px;
+
+.top {
+  background-color: #FFF;
+  height: 60px;
 }
