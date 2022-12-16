@@ -29,8 +29,10 @@ const Swap = () => {
                             <h4><span className="gray">Date:</span> 12/08/22</h4>
                             <h4><span className="gray">Highest Bid:</span> 0.57ETH</h4>
                         </div>
-                        <div className={styles.placebid}>
-                            {/* Add place a bid button*/}
+                        <div className={styles.placebid_right}>
+                            <h5>Current bid</h5>
+                            <h5>0.987 ETH</h5>
+                            <button>Place bid</button>
                         </div>
                     </div>
                     <div className={styles["column"]}>
@@ -46,8 +48,10 @@ const Swap = () => {
                             <h4><span className="gray">Date:</span> 12/08/22</h4>
                             <h4><span className="gray">Highest Bid:</span> 0.34ETH</h4>
                         </div>
-                        <div className={styles.placebid}>
-                            {/* Add place a bid button*/}
+                        <div className={styles.placebid_left}>
+                            <h5>Current bid</h5>
+                            <h5>0.987 ETH</h5>
+                           <button>Place bid</button>
                         </div>
                     </div>
                 </div>

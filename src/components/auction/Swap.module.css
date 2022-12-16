@@ -83,3 +83,46 @@
   font-family: 'Satoshi';
   line-height: 64px;
 }
+
+.placebid_left {
+  background: #F7F4F4;
+  border-radius: 10px;
+  position: absolute;
+  left: 120px;
+  width: 545px;
+  height: 100px;
+  top: 1465px;
+  display: flex;
+  justify-content: center;
+}
+
+.placebid_right {
+  background: #F7F4F4;
+  border-radius: 10px;
+  position: absolute;
+  left: 700px;
+  width: 545px;
+  height: 100px;
+  top: 1465px;
+  display: flex;
+  justify-content: center;
+}
+
+.placebid_left button, .placebid_right button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 70px;
+  gap: 6px;
+  background: #3341C1;
+  border-radius: 3px;
+  float: right;
+  margin: auto;
+}
+
+.placebid_left h5, .placebid_right h5 {
+  font-weight: 700;
+  font-family: 'Satoshi';
+  font-size: 18px;
+  padding: 18px
+}
