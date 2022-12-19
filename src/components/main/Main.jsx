@@ -1,3 +1,4 @@
+import Creators from './Creators';
 import Explore from './Explore';
 import Featured from './Featured';
 import Flip from './Flip';
@@ -9,6 +10,7 @@ const Main = () => {
       <Featured />
       <Upcoming />
       <Explore />
+      <Creators />
     </main>
   );
 };
