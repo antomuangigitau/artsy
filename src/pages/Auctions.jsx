@@ -1,9 +1,9 @@
-import React from 'react';
+import Main from '../components/auction/Main';
 
 const Auctions = () => {
   return (
     <div>
-      <h3>Auctions</h3>
+      <Main />
     </div>
   );
 };

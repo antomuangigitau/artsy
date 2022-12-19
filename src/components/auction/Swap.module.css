@@ -1,0 +1,57 @@
+
+.swap {
+  margin: 0 20px 0 120px;
+  /* background-color: black; */
+}
+
+.swap h4 {
+  font-family: 'Satoshi';
+  font-weight: 500;
+  font-size: 24px;
+  /* color: #BCB7B7; */
+}
+
+.swap p {
+  font-family: 'Satoshi';
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 43px;
+  min-width: 485px;
+  max-height: 356px;
+  margin-bottom: 60px;
+}
+
+.top__bids h3 {
+  font-family: 'Satoshi';
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.row {
+  margin-top: 46px;
+}
+
+.column {
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  gap: 110px;
+}
+
+.left, .right {
+  /* border: 0.5px solid black; */
+  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.25);;
+  border-radius: 8px;
+  background: #FFF;
+}
+
+.extrainfo {
+  padding-top: 20px;
+}
