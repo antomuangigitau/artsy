@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap');
+.footer {
+  padding: 147px 54px 44px;
+}
+.footer__container {
+  border: 1px solid #333;
+  padding: 62px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter {
+  color: #333333;
+}
+.newsletter h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Baskervville', serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 39px;
+}
+.newsletter p {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  margin-top: 20px;
+  margin-bottom: 34px;
+}
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+input::placeholder {
+  text-transform: uppercase;
+}
+.subscribe {
+  display: flex;
+  gap: 23px;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe div {
+  width: 446px;
+  border: 1px solid #333;
+  padding: 19px 19px 19px 58px;
+}
+.subscribe button {
+  background-color: #272727;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 19px 45px;
+  font-family: 'Baskervville', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.footer__links {
+  padding-left: 110px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.footer__links h3 {
+  align-self: center;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59px;
+}
+.links {
+  display: flex;
+  gap: 135px;
+}
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+.links ul li a {
+  color: #333;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 35px;
+}
+.email__location li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.email__location li p {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 35px;
+}
+.email__location li:first-child {
+  margin-bottom: 50px;
+}
+.get__year {
+  color: #333333;
+  margin-top: 91px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+}

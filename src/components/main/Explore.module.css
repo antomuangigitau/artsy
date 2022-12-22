@@ -1,0 +1,25 @@
+.explore__container {
+  margin: 120px 0;
+}
+.lone {
+  border-top: 0.5px solid #333;
+}
+.inner {
+  border-bottom: 0.5px solid #333;
+  padding: 59px 0;
+}
+.inner__container {
+  margin-left: 79px;
+  margin-right: 293px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container h4 {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 65px;
+}
