@@ -74,6 +74,15 @@ const Footer = () => {
                 .map((item) => {
                   const { title } = item;
                   const titlePath = title.toLowerCase().replace(/\s/g, '');
+                  if (titlePath === 'home') {
+                    return (
+                      <li>
+                        <Link key={title} to="/">
+                          {title}
+                        </Link>
+                      </li>
+                    );
+                  }
                   return (
                     <li>
                       <Link key={title} to={`/${titlePath}`}>
