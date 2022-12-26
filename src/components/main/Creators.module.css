@@ -9,7 +9,7 @@
   top: 140px;
   right: 140px;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       0deg,
@@ -48,7 +48,7 @@
   justify-content: space-between;
 }
 .creator p {
-  width: 535px;
+  max-width: 535px;
   font-size: 55px;
   font-weight: 600;
   line-height: 86px;
@@ -77,7 +77,7 @@
   line-height: 62px;
 }
 .everything {
-  width: 1148px;
+  max-width: 1148px;
   font-family: 'Clash Display', sans-serif;
   font-size: 32px;
   font-weight: 200;
@@ -89,4 +89,72 @@
   font-weight: 700;
   line-height: 264px;
   text-align: right;
+}
+
+@media (max-width: 768px) {
+  .creators {
+    overflow: hidden;
+  }
+  .title {
+    display: none;
+  }
+  .creator {
+    position: relative;
+  }
+  .image__bg {
+    height: 640px;
+    width: 637px;
+    top: 180px;
+    right: 40px;
+  }
+  .list {
+    position: absolute;
+    top: -30px;
+    right: -50px;
+  }
+  .list li {
+    display: inline;
+    font-size: 15px;
+    margin-right: 13px;
+  }
+
+  .creators__container {
+    padding: 15px 0;
+    margin: 0 10px;
+  }
+  .everything {
+    font-size: 24px;
+  }
+  .year {
+    line-height: 100px;
+    font-size: 64px;
+  }
+}
+@media (max-width: 600px) {
+  .creator p {
+    width: 264px;
+    font-size: 24px;
+    line-height: 37px;
+  }
+  .list {
+    right: -100px;
+  }
+}
+@media (max-width: 500px) {
+  .creator {
+    margin-bottom: 15px;
+  }
+  .image__bg {
+    top: 100px;
+    right: 80px;
+    height: 240px;
+    width: 237px;
+  }
+  .everything {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .list {
+    right: -150px;
+  }
 }
