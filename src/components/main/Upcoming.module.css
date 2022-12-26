@@ -8,7 +8,9 @@
   );
 }
 .container {
-  margin: 0 120px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 25px 0;
 }
 .container h2 {
@@ -23,7 +25,6 @@
 }
 .upcoming__contents {
   width: 100%;
-  height: 546px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,12 +38,7 @@
     linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52));
 }
 .upcoming__content {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  padding-left: 30px;
-  padding-right: 37px;
-  padding-bottom: 52.05px;
+  padding: 299px 37px 52px 30px;
   color: #fff;
 }
 .content__container {
@@ -81,7 +77,7 @@
   font-family: 'Satoshi', sans-serif;
 }
 .utils p {
-  width: 628.85px;
+  max-width: 628.85px;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
@@ -101,6 +97,7 @@
   font-weight: 400;
   line-height: 32px;
   color: #fff;
+  margin-left: 29px;
 }
 .progress__bar {
   margin-top: 21px;
@@ -130,4 +127,57 @@
 }
 .show__progress button:last-of-type {
   margin-left: 19px;
+}
+@media (max-width: 1280px) {
+  .utils {
+    flex-direction: column;
+  }
+  .utils p {
+    align-self: flex-start;
+  }
+  .utils div {
+    align-self: end;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 33px;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .container h2 {
+    display: none;
+  }
+  .progress__bar {
+    display: none;
+  }
+  .upcoming__content {
+    padding-top: 33px;
+    padding-bottom: 22px;
+    padding-left: 3px;
+    padding-right: 11px;
+  }
+  .first__div h3 {
+    font-size: 20px;
+  }
+  .utils p {
+    /* max-width: 287px; */
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    margin-bottom: 20px;
+  }
+  .utils a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .utils button {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }

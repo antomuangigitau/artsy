@@ -56,8 +56,10 @@ const Upcoming = () => {
               </div>
               <div className={styles['utils']}>
                 <p>{text}</p>
-                <a href="/">See more</a>
-                <Button>Set a reminder</Button>
+                <div>
+                  <a href="/">See more</a>
+                  <Button>Set a reminder</Button>
+                </div>
               </div>
             </div>
           </div>

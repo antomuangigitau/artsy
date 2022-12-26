@@ -50,7 +50,12 @@ const Footer = () => {
         <div className={styles['footer__container']}>
           <div className={styles['newsletter']}>
             <h3>NewsLetter</h3>
-            <p>Subscribe to get daily updates on new drops & exciting deals </p>
+            <p className={styles.deals}>
+              Subscribe to get daily updates on new drops & exciting deals
+            </p>
+            <p className={styles.daily}>
+              Subscribe to our daily updates and newsletters
+            </p>
             <div className={styles['subscribe']}>
               <div>
                 <input

@@ -44,7 +44,7 @@ input::placeholder {
   align-items: center;
 }
 .subscribe div {
-  width: 446px;
+  width: 100%;
   border: 1px solid #333;
   padding: 19px 19px 19px 58px;
 }
@@ -59,7 +59,7 @@ input::placeholder {
   line-height: 21px;
 }
 .footer__links {
-  padding-left: 110px;
+  /* padding-left: 110px; */
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
@@ -111,4 +111,31 @@ input::placeholder {
   font-weight: 500;
   line-height: 21px;
   letter-spacing: -0.02em;
+}
+.daily {
+  display: none;
+}
+
+@media (max-width: 912px) {
+  .deals {
+    display: none;
+  }
+  .daily {
+    display: block;
+  }
+  .footer__links {
+    flex-direction: column;
+  }
+  .footer__links h3 {
+    align-self: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .footer__container {
+    border: none;
+  }
+  .subscribe {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
