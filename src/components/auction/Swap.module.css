@@ -1,128 +1,147 @@
-
-.swap {
-  margin: 0 0 0 120px;
-  /* background-color: black; */
-  margin-bottom: 50px;
+:root {
+  --white: #FFFFFF;
+  --satoshi: 'Satoshi', 'sans';
 }
 
-.swap h4 {
-  font-family: 'Satoshi';
-  font-weight: 500;
-  font-size: 24px;
-  /* color: #BCB7B7; */
+.swap {
+  margin: 0 0 50px 120px;
 }
 
 .swap p {
-  font-family: 'Satoshi';
-  font-size: 28px;
-  font-weight: 500;
+  font-family: var(--satoshi);
+  font-size: 32px;
+  padding: 0 0 20px 0;
+  font-size: 24px;
 }
 
-.images {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  overflow: hidden;
-  gap: 43px;
-  min-width: 100%;
-  max-height: 356px;
-  margin-bottom: 60px;
+.imgs__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  height: 100%;
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+
+@media screen and (max-width: 576px) {
+  .auction_imgs:nth-last-child() {
+    display: none;
+    width: auto;
+  }
+
+  .auction_imgs:nth-last-child(2) {
+    display:none;
+  }
+
+  .imgs__container {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+}
+
+.top__bids {
+  margin-top: 3rem;
 }
 
 .top__bids h3 {
   font-family: 'Satoshi';
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 64px;
+  font-size: 32px;
+  margin-bottom: 2rem;
 }
 
-.row {
-  margin-top: 46px;
-  margin-bottom: 500px;
+/* First attempt making the card responsive */
+@media screen and (max-width: 576px) {
+  .swap {
+    max-width: 100%;
+  }
+
+  .cards__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .img {
+    max-width: 100%;
+  }
 }
 
-.column {
-  width: 50%;
-  float: left;
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
-  flex-wrap: wrap;
-
+@media  screen and (min-width: 577px) {
+  .cards__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 37px;
+    margin-right: 120px;
+  }
 }
 
 .card {
-  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(207, 187, 187, 0.604);
   border-radius: 15px;
-  border: 1px solid #D9D9D9;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.25);
 }
 
-.card h3 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 64px;
-  font-family: 'Satoshi';
-}
-
-.top {
-  background-color: #FFF;
-  height: 60px;
-}
-
-.extrainfo span {
-  color: #616161;
-  font-family: 'Satoshi';
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 64px;
-  margin-left: 30px;
-}
-
-.extrainfo h4 {
-  font-weight: 700;
-  font-size: 30px;
-  font-family: 'Satoshi';
-  line-height: 64px;
-}
-
-.placebid_left {
-  background: #F7F4F4;
-  border-radius: 10px;
-  position: absolute;
-  left: 120px;
-  width: 545px;
-  height: 100px;
-  top: 1465px;
-  display: flex;
-  justify-content: center;
-}
-
-.placebid_right {
-  background: #F7F4F4;
-  border-radius: 10px;
-  position: absolute;
-  left: 700px;
-  width: 545px;
-  height: 100px;
-  top: 1465px;
-  display: flex;
-  justify-content: center;
-}
-
-.placebid_left button, .placebid_right button {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 20px 70px;
-  gap: 6px;
-  background: #3341C1;
-  border-radius: 3px;
+.like_button {
+  border-radius: 49%;
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 5px;
   float: right;
-  margin: auto;
 }
 
-.placebid_left h5, .placebid_right h5 {
-  font-weight: 700;
-  font-family: 'Satoshi';
-  font-size: 18px;
-  padding: 18px
+.bid_name {
+  text-align: start;
+  margin: 10px 0 0px 0;
+}
+
+.like_button:hover {
+  border-radius: 45%;
+}
+
+.bid_info {
+  background-color: var(--white);
+}
+
+.bid_info {
+  font-size: 28px;
+  color: gray;
+}
+.bid_info span {
+  font-size: 32px;
+  color: black;
+}
+
+.bid_button {
+  border-radius: 3px;
+  background: #3341C1;
+  width: 105px;
+  height: 50px;
+  color: var(--white);
+  display: block;
+  float: right;
+}
+
+.place_bid {
+  background-color: rgb(231, 242, 242);
+  border-radius: 10px;
+}
+
+.place_bid button {
+  float: right;
+}
+
+.place_bid span {
+  color: black;
+  font-family: var(--satoshi);
+}
+
+.place_bid p {
+  color: gray;
+  /* float: left; */
 }

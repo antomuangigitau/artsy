@@ -17,7 +17,7 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <div className={styles['btn__section']}>
+        <div className={styles.btn__section}>
           <button>
             <Search />
           </button>
