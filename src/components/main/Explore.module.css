@@ -1,0 +1,46 @@
+.explore__container {
+  margin: 120px 0;
+}
+.lone {
+  border-top: 0.5px solid #333;
+}
+.inner {
+  border-bottom: 0.5px solid #333;
+  padding: 59px 0;
+}
+.inner__container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container h4 {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 65px;
+}
+@media (max-width: 768px) {
+  .container h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .container a {
+    border: 0.5px solid #000000;
+    width: 53px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .container a img {
+    height: 22px;
+    width: 34px;
+  }
+}
