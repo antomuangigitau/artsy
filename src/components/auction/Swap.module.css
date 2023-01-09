@@ -41,6 +41,10 @@
   
 }
 
+.auction_imgs:nth-child(3) {
+  overflow: hidden;
+}
+
 .top__bids {
   margin-top: 3rem;
 }
