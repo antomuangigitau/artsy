@@ -11,6 +11,7 @@ const Swap = () => {
                     auctionimgs.map(image => {
                         const {id, img} = image;
                         return <img className={styles['auction_imgs']} src={img} key={id} alt={id} />;
+                        // return <Link to={"/livebid/:id"}>Image goes here</Link>
                     })
                 }
             </div>
@@ -35,7 +36,7 @@ const Swap = () => {
                             <p>Highest Bid: <span>0.34ETH</span></p>
                             <div className={styles.place_bid}>
                                 <p>Current Bid</p>
-                                <span>0.987ETH</span>
+                                <h4>0.987ETH</h4>
                                 <button className={styles['bid_button']}>Place bid</button>
                             </div>
                         </div>
@@ -56,7 +57,7 @@ const Swap = () => {
                             <p>Highest Bid: <span>0.57ETH</span></p>
                             <div className={styles.place_bid}>
                                 <p>Current Bid</p>
-                                <p><span>0.987ETH</span></p>
+                                <h4>0.987ETH</h4>
                                 <button className={styles['bid_button']}>Place bid</button>
                             </div>
                         </div>

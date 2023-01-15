@@ -124,28 +124,36 @@
 .bid_button {
   border-radius: 3px;
   background: #3341C1;
-  width: 105px;
+  width: 247px;
   height: 50px;
   color: var(--white);
-  display: block;
+  display: inline;
   float: right;
+  margin: -15px 30px 50px 50px;
+  font-family: var(--satoshi);
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .place_bid {
   background-color: rgb(231, 242, 242);
   border-radius: 10px;
+  max-height: 110px;
 }
 
-.place_bid button {
-  float: right;
-}
-
-.place_bid span {
+.place_bid h4 {
   color: black;
   font-family: var(--satoshi);
+  display: inline;
 }
 
 .place_bid p {
   color: gray;
   /* float: left; */
+}
+
+.place_bid::after {
+  content: "";
+  clear: both;
+  display: table;
 }
