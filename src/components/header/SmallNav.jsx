@@ -43,7 +43,13 @@ const SmallNav = () => {
             const { id, page, path } = link;
             return (
               <li className={styles['links__list']} key={id}>
-                <Link className={styles.link} to={path}>
+                <Link
+                  className={styles.link}
+                  to={path}
+                  onClick={() => {
+                    dispatch(closeHamburger());
+                  }}
+                >
                   {page}
                 </Link>
               </li>

@@ -49,3 +49,12 @@ button {
 img {
   vertical-align: middle;
 }
+.marketplace {
+  display: flex;
+  padding: 0 54px;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
