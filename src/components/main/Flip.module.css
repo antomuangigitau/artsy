@@ -26,16 +26,38 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
-.images img:first-child {
+.images div:first-child {
   padding-top: 116px;
 }
-.images img:nth-child(2) {
+.images div:nth-child(2) {
   padding-top: 58px;
 }
-.images img:nth-child(4) {
+.images div:nth-child(4) {
   padding-top: 54px;
 }
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.pic:nth-child(odd) img {
+  animation: slideInFromLeft 0.7s ease-in-out;
+}
+.pic:nth-child(even) img {
+  animation: slideInFromRight 0.7s ease-in-out;
+}
 @media (max-width: 768px) {
   .flip h3 {
     font-size: 3.5rem;

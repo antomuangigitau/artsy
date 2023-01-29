@@ -29,7 +29,7 @@
   margin-top: 20px;
   margin-bottom: 34px;
 }
-input {
+.subscribe input {
   border: none;
   outline: none;
   width: 100%;
@@ -129,6 +129,9 @@ input::placeholder {
   .footer__links h3 {
     align-self: flex-start;
   }
+  .links {
+    margin: 60px 0;
+  }
 }
 @media (max-width: 768px) {
   .footer__container {
@@ -137,5 +140,14 @@ input::placeholder {
   .subscribe {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    padding: 66px 0 50px 20px;
+  }
+  .newsletter p {
+    font-size: 12px;
+    line-height: 16px;
   }
 }

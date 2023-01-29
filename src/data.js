@@ -60,26 +60,25 @@ export const auctionimgs = [
     img: auction1,
   },
   {
-    id:2,
+    id: 2,
     img: auction2,
   },
   {
-    id:3,
-    img: auction3
+    id: 3,
+    img: auction3,
   },
-]
+];
 
 export const topauctions = [
   {
-    id:1,
+    id: 1,
     img: auction4,
   },
   {
-    id:2,
+    id: 2,
     img: auction5,
   },
-]
-
+];
 
 import img5 from './assets/images/Rectangle 299.png';
 import img6 from './assets/images/Rectangle 300.png';
@@ -184,5 +183,63 @@ export const contents = [
     ],
     major: '64 major creators',
     arrowImg: arrow,
+  },
+];
+
+import market1 from './assets/images/market1.png';
+import market2 from './assets/images/market2.png';
+import market3 from './assets/images/market3.png';
+import market4 from './assets/images/market4.png';
+import market5 from './assets/images/market5.png';
+import market6 from './assets/images/market6.png';
+import market7 from './assets/images/market7.png';
+import market8 from './assets/images/market8.png';
+import market9 from './assets/images/market9.png';
+
+export const marketPics = [
+  {
+    id: 1,
+    img: market1,
+    title: 'PHILOMENA ‘22',
+  },
+  {
+    id: 2,
+    img: market2,
+    title: 'BOOLEAN EGYPTIAN',
+  },
+  {
+    id: 3,
+    img: market3,
+    title: 'BLANC',
+  },
+  {
+    id: 4,
+    img: market4,
+    title: 'ELLIPSIA',
+  },
+  {
+    id: 5,
+    img: market5,
+    title: 'THE LAWMAKERS ',
+  },
+  {
+    id: 6,
+    img: market6,
+    title: 'VEIL',
+  },
+  {
+    id: 7,
+    img: market7,
+    title: 'ALTERNATING',
+  },
+  {
+    id: 8,
+    img: market8,
+    title: 'ROSEMARY ‘22',
+  },
+  {
+    id: 9,
+    img: market9,
+    title: 'BEVERLY',
   },
 ];

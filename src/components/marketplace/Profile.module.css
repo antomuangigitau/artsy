@@ -1,0 +1,12 @@
+.main {
+  border: 1px solid red;
+  width: 100%;
+}
+.search__container {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 4px 4px 64px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
