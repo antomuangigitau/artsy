@@ -4,8 +4,8 @@ const Profile = () => {
   return (
     <main className={styles.main}>
       <div className={styles['search__container']}>
-        <p>See 1-6 of 15 results</p>
         <form className="sort">
+          <input type="text" placeholder="See 1-6 of 15 results" />
           <label htmlFor="sort">sort by</label>
           <select name="sort" id="">
             <option value="price-lowest">price (lowest)</option>
