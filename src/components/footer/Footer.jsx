@@ -81,18 +81,14 @@ const Footer = () => {
                   const titlePath = title.toLowerCase().replace(/\s/g, '');
                   if (titlePath === 'home') {
                     return (
-                      <li>
-                        <Link key={title} to="/">
-                          {title}
-                        </Link>
+                      <li key={title}>
+                        <Link to="/">{title}</Link>
                       </li>
                     );
                   }
                   return (
-                    <li>
-                      <Link key={title} to={`/${titlePath}`}>
-                        {title}
-                      </Link>
+                    <li key={title}>
+                      <Link to={`/${titlePath}`}>{title}</Link>
                     </li>
                   );
                 })}
@@ -104,10 +100,8 @@ const Footer = () => {
                   const { title } = item;
                   const titlePath = title.toLowerCase().replace(/\s/g, '');
                   return (
-                    <li>
-                      <Link key={title} to={`/${titlePath}`}>
-                        {title}
-                      </Link>
+                    <li key={title}>
+                      <Link to={`/${titlePath}`}>{title}</Link>
                     </li>
                   );
                 })}
