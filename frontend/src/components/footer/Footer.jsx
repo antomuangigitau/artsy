@@ -59,9 +59,9 @@ const Footer = () => {
             <div className={styles['subscribe']}>
               <div>
                 <input
-                  type="text"
+                  type="email"
                   name="subscribe"
-                  placeholder="Enter your name"
+                  placeholder="Enter your email here"
                   value={subscribe}
                   onChange={(e) => setSubscribe(e.target.value)}
                 />

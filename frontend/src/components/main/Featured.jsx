@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { contents } from '../../data';
 import styles from './Featured.module.css';
 const Featured = () => {
@@ -17,10 +18,12 @@ const Featured = () => {
                   <div className={styles['image__wrap']}>
                     <img className={styles['content__img']} src={img} alt="" />
                     <div className={styles['position__overlay']}>
-                      <p>View product</p>
-                      <span>
-                        <img src={arrowImg} alt="" />
-                      </span>
+                      <Link to={`/$id`}>
+                        <p>View product</p>
+                        <span>
+                          <img src={arrowImg} alt="" />
+                        </span>
+                      </Link>
                     </div>
                   </div>
                   <div className={styles['inner__content']}>
