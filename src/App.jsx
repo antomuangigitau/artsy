@@ -1,5 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Auctions, Drop, Home, Marketplace, SharedLayout } from './pages';
+import {
+  Auctions,
+  Drop,
+  Home,
+  Marketplace,
+  SharedLayout,
+  SingleItem,
+} from './pages';
 function App() {
   return (
     <div className="App">
@@ -8,6 +15,7 @@ function App() {
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Home />} />
             <Route path="/marketplace" element={<Marketplace />} />
+            <Route path="/marketplace/:userId" element={<SingleItem />} />
             <Route path="/auctions" element={<Auctions />} />
             <Route path="/drop" element={<Drop />} />
           </Route>

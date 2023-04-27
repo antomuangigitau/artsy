@@ -1,6 +1,6 @@
 import React from 'react';
-import Aside from '../components/marketplace/Aside';
-import Profile from '../components/marketplace/Profile';
+import Aside from '../components/marketplace/Aside/Aside';
+import Profile from '../components/marketplace/Profile/Profile';
 
 const Marketplace = () => {
   return (

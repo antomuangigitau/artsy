@@ -1,5 +1,5 @@
 import styles from './TitleProp.module.css';
-import titleArrow from '../../assets/images/titleArrow.png';
+import titleArrow from '../../../assets/images/titleArrow.png';
 const TitleProp = ({
   title,
   setCurrentCategory,
