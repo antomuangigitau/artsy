@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
-import search from '../../assets/images/search.png';
-import filter from '../../assets/images/filter.png';
+import search from '../../../assets/images/search.png';
+import filter from '../../../assets/images/filter.png';
 
 import styles from './Aside.module.css';
-import TitleProp from './TitleProp';
+import TitleProp from '../TitleProp/TitleProp';
 import { useEffect } from 'react';
 import MultiRangeSlider from './MultiRangeSlider';
 const nameTags = [

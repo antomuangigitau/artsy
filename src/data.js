@@ -195,6 +195,7 @@ import market6 from './assets/images/market6.png';
 import market7 from './assets/images/market7.png';
 import market8 from './assets/images/market8.png';
 import market9 from './assets/images/market9.png';
+import market10 from './assets/images/showmore/photo-1.jpg';
 
 export const marketPics = [
   {
@@ -239,6 +240,36 @@ export const marketPics = [
   },
   {
     id: 9,
+    img: market9,
+    title: 'BEVERLY',
+  },
+  {
+    id: 10,
+    img: market10,
+    title: 'SASSY',
+  },
+  {
+    id: 11,
+    img: market5,
+    title: 'BOUGIE',
+  },
+  {
+    id: 12,
+    img: market6,
+    title: 'LOST',
+  },
+  {
+    id: 13,
+    img: market7,
+    title: 'CIRCA ‘95',
+  },
+  {
+    id: 14,
+    img: market8,
+    title: 'ROSEMARY ‘22',
+  },
+  {
+    id: 15,
     img: market9,
     title: 'BEVERLY',
   },
