@@ -3,6 +3,7 @@ import Drop from './Drop';
 import Home from './Home';
 import Marketplace from './Marketplace';
 import SharedLayout from './SharedLayout';
-import SingleItem from './SingleItem';
+import LiveBid from './LiveBid';
 
-export { Home, SharedLayout, Marketplace, Auctions, Drop, SingleItem };
+export { Home, SharedLayout, Marketplace, Auctions, Drop, LiveBid };
+
