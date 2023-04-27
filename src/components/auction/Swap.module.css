@@ -1,57 +1,159 @@
-
-.swap {
-  margin: 0 20px 0 120px;
-  /* background-color: black; */
+:root {
+  --white: #FFFFFF;
+  --satoshi: 'Satoshi', 'sans';
 }
 
-.swap h4 {
-  font-family: 'Satoshi';
-  font-weight: 500;
-  font-size: 24px;
-  /* color: #BCB7B7; */
+.swap {
+  margin: 0 0 50px 120px;
 }
 
 .swap p {
-  font-family: 'Satoshi';
-  font-size: 28px;
-  font-weight: 500;
+  font-family: var(--satoshi);
+  font-size: 32px;
+  padding: 0 0 20px 0;
+  font-size: 24px;
 }
 
-.images {
+.imgs__container {
   display: flex;
   flex-direction: row;
-  gap: 43px;
-  min-width: 485px;
-  max-height: 356px;
-  margin-bottom: 60px;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  height: 100%;
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+
+@media screen and (max-width: 576px) {
+  .auction_imgs:nth-last-child() {
+    display: none;
+    width: auto;
+  }
+
+  .auction_imgs:nth-last-child(2) {
+    display:none;
+  }
+
+  .imgs__container {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+}
+
+.auction_imgs:nth-child(3) {
+  overflow: hidden;
+}
+
+.top__bids {
+  margin-top: 3rem;
 }
 
 .top__bids h3 {
   font-family: 'Satoshi';
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 64px;
+  font-size: 32px;
+  margin-bottom: 2rem;
 }
 
-.row {
-  margin-top: 46px;
+/* First attempt making the card responsive */
+@media screen and (max-width: 576px) {
+  .swap {
+    max-width: 100%;
+  }
+
+  .cards__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .img {
+    max-width: 100%;
+  }
 }
 
-.column {
-  width: 50%;
-  float: left;
-  display: flex;
-  flex-direction: row;
-  gap: 110px;
+@media  screen and (min-width: 577px) {
+  .cards__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 37px;
+    margin-right: 120px;
+  }
 }
 
-.left, .right {
-  /* border: 0.5px solid black; */
-  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.25);;
-  border-radius: 8px;
-  background: #FFF;
+.card {
+  border: 1px solid rgba(207, 187, 187, 0.604);
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.25);
 }
 
-.extrainfo {
-  padding-top: 20px;
+.like_button {
+  border-radius: 49%;
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 5px;
+  float: right;
+}
+
+.bid_name {
+  text-align: start;
+  margin: 10px 0 0px 0;
+}
+
+.like_button:hover {
+  border-radius: 45%;
+}
+
+.bid_info {
+  background-color: var(--white);
+}
+
+.bid_info {
+  font-size: 28px;
+  color: gray;
+}
+.bid_info span {
+  font-size: 32px;
+  color: black;
+}
+
+.bid_button {
+  border-radius: 3px;
+  background: #3341C1;
+  width: 247px;
+  height: 50px;
+  color: var(--white);
+  display: inline;
+  float: right;
+  margin: -15px 30px 50px 50px;
+  font-family: var(--satoshi);
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.place_bid {
+  background-color: rgb(231, 242, 242);
+  border-radius: 10px;
+  max-height: 110px;
+}
+
+.place_bid h4 {
+  color: black;
+  font-family: var(--satoshi);
+  display: inline;
+}
+
+.place_bid p {
+  color: gray;
+  /* float: left; */
+}
+
+.place_bid::after {
+  content: "";
+  clear: both;
+  display: table;
 }
