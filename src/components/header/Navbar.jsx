@@ -4,7 +4,7 @@ import { Cart, Notifications, Search } from '../../icons';
 import styles from './Navbar.module.css';
 const Navbar = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.nav}>
         <h3>ARTSY.</h3>
         <ul className={styles.links}>
