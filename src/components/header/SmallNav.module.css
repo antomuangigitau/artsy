@@ -92,6 +92,6 @@
   }
   .open {
     display: block;
-    animation: 0.7s ease-in-out forwards;
+    transition: 0.7s ease-in-out forwards;
   }
 }
