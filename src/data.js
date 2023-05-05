@@ -195,7 +195,7 @@ import market6 from './assets/images/market6.png';
 import market7 from './assets/images/market7.png';
 import market8 from './assets/images/market8.png';
 import market9 from './assets/images/market9.png';
-import market10 from './assets/images/showmore/photo-1.jpg';
+import market10 from './assets/images/market4.png';
 
 export const marketPics = [
   {

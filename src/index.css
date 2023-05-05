@@ -53,10 +53,13 @@ img {
   display: flex;
   /* padding: 0 54px; */
   margin-left: 120px;
-  margin-right: 130px;
+  margin-right: 120px;
 }
 input {
   border: none;
   outline: none;
   background-color: transparent;
+}
+.main__profile {
+  margin-top: 96px;
 }
